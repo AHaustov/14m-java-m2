@@ -61,11 +61,27 @@ public class MineSweeper {
         }
 
         // 4. Середина лево
+        if (y - 1 >= 0 && field[x][y - 1] != bomb) {
+            field[x][y - 1]++;
+        }
         // 5. Середина право
-
+        if (y + 1 < field[x].length && field[x][y + 1] != bomb) {
+            field[x][y + 1]++;
+        }
         // 6. Низ лево
+        if (x + 1 < field.length && y - 1 >= 0 && field[x + 1][y - 1] != bomb) {
+            field[x + 1][y - 1]++;
+        }
         // 7. Низ середина
+        if (x + 1 < field.length && field[x + 1][y] != bomb) {
+            field[x + 1][y]++;
+        }
+
         // 8. Низ право
+        if (x + 1 < field.length && y + 1 < field[x].length && field[x + 1][y + 1] != bomb) {
+            field[x + 1][y + 1]++;
+        }
+
         displayField(field);
     }
 
