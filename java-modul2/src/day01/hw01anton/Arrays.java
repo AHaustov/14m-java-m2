@@ -50,6 +50,31 @@ public class Arrays {
         System.out.println(args[args.length - 1] + "]");
     }
 
+    public static int[] create(int... args) {
+        int[] output = new int[args.length];
+        return output;
+    }
+
+    public static double[] create(double... args) {
+        double[] output = new double[args.length];
+        return output;
+    }
+
+    public static char[] create(char... args) {
+        char[] output = new char[args.length];
+        return output;
+    }
+
+    public static long[] create(long... args) {
+        long[] output = new long[args.length];
+        return output;
+    }
+
+    public static byte[] create(byte... args) {
+        byte[] output = new byte[args.length];
+        return output;
+    }
+
     public static int[] createInt(int size) {
         int[] output = new int[size];
         for (int i = 0; i < size; i++) {
