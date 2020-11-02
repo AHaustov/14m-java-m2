@@ -1,3 +1,6 @@
+package day01;
+
+import day01.CrudArray;
 
 public class ExercisesExampleTest {
     public static void main(String[] args) {
