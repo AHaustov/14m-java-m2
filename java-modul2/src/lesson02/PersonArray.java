@@ -14,15 +14,30 @@ public class PersonArray {
         Person p10 = new Person("Peter", 97, 192, 16);
         Person[] arrP = new Person[]{p1, p2, p3, p4, p5, p6, p7, p8, p9, p10};
         bubbleSort(arrP);
-        System.out.println(arrP[0].age);
-        System.out.println(p1.age);
-        System.out.println(arrP[7].bmi);
+        //System.out.println(arrP[0].age);
+        //System.out.println(p1.age);
+        //System.out.println(arrP[7].bmi);
+        printArr(arrP);
+    }
+
+    public static void printArr(Person[] arr) {
+        for (Person user : arr) {
+            user.displayInfo();
+        }
     }
 
     private static void bubbleSort(Person[] arr) {
-        int count = -1;
-      //  while (){
-
-       // }
+        boolean unsorted = true;
+        while (unsorted) {
+            unsorted = false;
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (arr[i].age > arr[i + 1].age) {
+                    Person temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    unsorted = true;
+                }
+            }
+        }
     }
 }
