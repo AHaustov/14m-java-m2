@@ -1,5 +1,8 @@
-../.idea/*
-../*.iml
-../out/*
-*.class
+*/.idea/*
+.idea/*
+*/*.iml
+*.iml
+*/out/*
+out/*
 .DS_Store
+*/.DS_Store
