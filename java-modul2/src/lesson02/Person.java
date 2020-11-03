@@ -27,7 +27,7 @@ public class Person {
     }
 
     public void displayInfo() {
-        System.out.println("The name is: " + name);
+        System.out.println("The name is: " + name + " " + age);
         System.out.println("The BMI of this person is: " + bmi);
     }
 }
