@@ -7,6 +7,10 @@ public class Person {
     double bmi;
     int age;
 
+    public Person() {
+
+    }
+
     public Person(String username, double userWeight, double userHeight, int userAge) {
         age = userAge;
         weight = userWeight;
