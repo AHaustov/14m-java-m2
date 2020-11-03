@@ -1,3 +1,5 @@
+package lesson01;
+
 /**
  * java-modul2
  * 02 10 : 31

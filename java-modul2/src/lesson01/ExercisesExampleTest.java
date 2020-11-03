@@ -1,3 +1,4 @@
+package lesson01;
 
 public class ExercisesExampleTest {
     public static void main(String[] args) {
