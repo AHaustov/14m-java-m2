@@ -37,7 +37,7 @@ public class Cat {
     Address address;
     double bmiIndex;
 
-    // Long version = 2020_11_04_00_10_07L;  // версионирование, java, убунту, андроид
+    //final Long VERSION = 2020_11_04_00_10_07L;  // версионирование, java, убунту, андроид
 
     Cat(String name) {
     }
