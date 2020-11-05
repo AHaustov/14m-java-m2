@@ -15,22 +15,22 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         System.out.println("Сортировка массивов с помощью 'Сортировка вставками'");
-        int[] array = {22, 100, 55, 38, 88, 7, -1, 1000, 0};
+        int[] array = {22, 100, 55, 38, 88, 7};
         System.out.println(Arrays.toString(array));
         insertionSortImperative(array);
         System.out.println(Arrays.toString(array));
     }
 
-    public static void insertionSortImperative(int[] input) {
-        for (int i = 1; i < input.length; i++) {  // НОЛЕВОЙ элемент отсортирован, мы начинаем с первого
-            int newElement = input[i]; // временная переменная, которая хранит значение ОТ i
-            int location = i - 1; // цикл начался не с нОля.
-            while (location >= 0 && input[location] > newElement) {
-                input[location + 1] = input[location];
+    public static void insertionSortImperative(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {  // НОЛЕВОЙ элемент отсортирован, мы начинаем с первого
+            int bookToProof = arr[i]; // временная переменная, которая хранит значение ОТ i
+            int indexOF = i - 1; // цикл начался не с нОля.
+            while (indexOF >= 0 && arr[indexOF] > bookToProof) {
+                arr[indexOF + 1] = arr[indexOF];
                 // поставили дубликат книги слева
-                location = location - 1;
+                indexOF = indexOF - 1;
             }
-            input[location + 1] = newElement;
+            arr[indexOF + 1] = bookToProof;
         }
     }
 }
