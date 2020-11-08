@@ -10,7 +10,7 @@ public class FractionTest {
         System.out.println(fr2.getDenominator());
 
         Fraction a = new Fraction(3, 4);
-        Fraction b = new Fraction(5, 7);
+        Fraction b = new Fraction(5, 8);
         Fraction c = Fraction.sum(a, b);
         System.out.println(c);
 
@@ -18,10 +18,11 @@ public class FractionTest {
 
         System.out.println("-------------------------");
         Fraction x = new Fraction(5, 8);
-        Fraction y = new Fraction(7, 9);
+        Fraction y = new Fraction(7, 12);
 
-        System.out.println(x.sum(y));
+        System.out.println(x.sum(y).toString());
 
         String hm = "Василий";
     }
+
 }

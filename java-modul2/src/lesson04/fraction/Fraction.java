@@ -24,6 +24,9 @@ public class Fraction {
 
     public Fraction sum(Fraction fraction) {
         Fraction result = sum(fraction, this);
+        int shorter = Math.nod(result.numerator, result.denominator);
+        result.numerator /= shorter;
+        result.denominator /= shorter;
         return result;
     }
 
@@ -41,6 +44,10 @@ public class Fraction {
                         b.numerator * (cDenominator / b.denominator);
 
         Fraction c = new Fraction(cNumerator, cDenominator);
+        int shorter=Math.nod(cNumerator, cDenominator);
+        c.numerator/=shorter;
+        c.denominator/=shorter;
+
         return c;
     }
 
