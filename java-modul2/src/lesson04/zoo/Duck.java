@@ -1,14 +1,14 @@
 package lesson04.zoo;
 
-public class Duck extends Pet{
+public class Duck extends Pet {
     private String wingsColor;
 
-    Duck(String wingsColor, String name){
+    Duck(String wingsColor, String name) {
         super(name);
-        this.wingsColor = wingsColor;                ;
+        this.wingsColor = wingsColor;
     }
 
-    void qraqra(){
+    void qraqra() {
         System.out.println("крякает");
     }
 }

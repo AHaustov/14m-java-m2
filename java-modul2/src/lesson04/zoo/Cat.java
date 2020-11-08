@@ -5,11 +5,10 @@ public class Cat {
     private int age;
     private String breed;
 
-    void move(){
-        System.out.println("Я двигаюсь!!!");
+    public Cat() {
     }
 
-    void myaumyau(){
-
+    void move(){
+        System.out.println("Я двигаюсь!!!");
     }
 }
