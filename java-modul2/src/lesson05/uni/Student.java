@@ -4,9 +4,15 @@ import java.util.Objects;
 
 public final class Student extends UniUser {
     private String subject;
+    private double tuitionFee;
+    private double eatCoefficient = 0.6;
 
     public Student(String firstName) {
         super(firstName);
+    }
+
+    public Student(String firstname, String secondName, int age) {
+        super(firstname, secondName, age);
     }
 
     public Student(String uniID, int age, String subject) {
@@ -18,15 +24,30 @@ public final class Student extends UniUser {
         super(firstName, secondName, uniID, age);
     }
 
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public double getTuitionFee() {
+        return tuitionFee;
+    }
+
+    public void setTuitionFee(double tuitionFee) {
+        this.tuitionFee = tuitionFee;
+    }
+
+    public void payForSemester() {
+        this.valueBankAcc -= this.tuitionFee;
+    }
 
     public void study() {
         System.out.println("Должен учиться, учиться и ещё раз учиться!");
     }
 
-    @Override
-    public void eats() {
-        System.out.println("В столовой все цены со скидкой. Скидка = ");
-    }
 
     @Override
     public String toString() {

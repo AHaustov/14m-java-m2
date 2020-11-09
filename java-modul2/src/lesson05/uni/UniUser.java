@@ -1,42 +1,59 @@
 package lesson05.uni;
 
 public class UniUser extends Person {
-    String firstName;
-    private String secondName;
     String uniID;
-    private int age;
+    private double uniSalary = 0.00;
 
     public UniUser(String firstName) {
-        this.firstName = firstName;
+        super(firstName);
+    }
+
+    public UniUser(String firstname, String secondName, int age) {
+        super(firstname, secondName, age);
+    }
+
+    public UniUser(String firstName, String uniID) {
+        super(firstName);
+        this.uniID = uniID;
     }
 
     public UniUser(String uniID, int age) {
         this.uniID = uniID;
-        this.age = age;
+        super.age = age;
     }
 
     public UniUser(String firstName, String secondName, String uniID, int age) {
-        this.firstName = firstName;
-        this.secondName = secondName;
+        super(firstName, secondName, age);
         this.uniID = uniID;
-        this.age = age;
     }
 
-    protected void eats() {
-        System.out.println("В столовой все цены со скидкой. Скидка = ");
+    public String getUniID() {
+        return uniID;
     }
 
-    private void walks() {
-        System.out.println("Ходит по кампусу");
+    public void setUniID(String uniID) {
+        this.uniID = uniID;
+    }
+
+    protected double getUniSalary() {
+        return uniSalary;
+    }
+
+    protected void setUniSalary(double uniSalary) {
+        this.uniSalary = uniSalary;
     }
 
     @Override
     public String toString() {
-        return "Person{" +
-                "firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
-                ", uniID='" + uniID + '\'' +
-                ", age=" + age +
+        return super.toString() + " " + "UniUser{" +
+                "uniID='" + uniID + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object input) {
+        UniUser user = (UniUser) input;
+        return this.firstName.equalsIgnoreCase(user.firstName) &&
+                this.uniID.equals(user.uniID);
     }
 }
