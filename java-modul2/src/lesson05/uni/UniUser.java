@@ -3,7 +3,7 @@ package lesson05.uni;
 public class UniUser extends Person {
     String firstName;
     private String secondName;
-    private String uniID;
+    String uniID;
     private int age;
 
     public UniUser(String firstName) {

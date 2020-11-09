@@ -1,5 +1,7 @@
 package lesson05.uni;
 
+import java.util.Objects;
+
 public final class Student extends UniUser {
     private String subject;
 
@@ -31,5 +33,28 @@ public final class Student extends UniUser {
         return super.toString() + '\'' + "Student{" +
                 "subject='" + subject + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        Student student = (Student) o;
+        // Если имя и АйДи у объектов равны, то это два экземпляра одной СУЩНОСТИ
+        return
+                this.firstName.equals(student.firstName)
+                        && this.uniID.equals(student.uniID);
+    }
+
+    public boolean myEquals(Student st) {
+        return this.firstName.equals(st.firstName);
+
+/*        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Objects.equals(subject, student.subject);*/
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(subject);
     }
 }
