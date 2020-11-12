@@ -16,18 +16,18 @@ public class ClassWork07 {
        /* System.out.println(canBalance(1, 1, 1, 2, 1));// → true
         System.out.println(canBalance(2, 1, 1, 2, 1));// → false
         System.out.println(canBalance(10, 10));// → true*/
-        System.out.println(Arrays.toString(seriesUp(3)));// → [1, 1, 2, 1, 2, 3]
+       // System.out.println(Arrays.toString(seriesUp(3)));// → [1, 1, 2, 1, 2, 3]
         System.out.println(Arrays.toString(seriesUp(4)));// → [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
-        System.out.println(Arrays.toString(seriesUp(2)));// → [1, 1, 2]
+      //  System.out.println(Arrays.toString(seriesUp(2)));// → [1, 1, 2]
     }
 
     private static int[] seriesUp(int n) {
         int[] output = new int[n * (n + 1) / 2];
-        int index = 0;
+        int z = 0;
         for (int i = 0; i <= n; i++) {
             for (int j = 0; j < i; j++) {
-                output[index] = j + 1;
-                index++;
+                output[z] = j + 1;
+                z++;
             }
         }
         return output;
