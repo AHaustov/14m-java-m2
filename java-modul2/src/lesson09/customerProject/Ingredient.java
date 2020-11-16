@@ -1,23 +1,36 @@
 package lesson09.customerProject;
 
-class Ingredient {
-    private String name;
+class Ingredient extends Drinks {
     private boolean alcohol;
     private int liquid;
     private int perCent;
 
-    public Ingredient(String name, int liquid) {
-        this.name = name;
+    public Ingredient() {
+
+    }
+
+    public Ingredient(String name, int liquid, int perCent, double price) {
+        super(name, "Alcoholfree Drinks");
         this.liquid = liquid;
+        this.perCent = perCent;
+        alcohol = perCent > 0;
+        setPrice(price);
+    }
+
+    public boolean isAlcohol() {
+        return alcohol;
+    }
+
+    public int getLiquid() {
+        return liquid;
+    }
+
+    public int getPerCent() {
+        return perCent;
     }
 
     @Override
     public String toString() {
-        return "\nIngredient{" +
-                "name='" + name + '\'' +
-                ", alcohol=" + alcohol +
-                ", liquid=" + liquid +
-                ", perCent=" + perCent +
-                '}';
+        return "\n'" + getName() + '\'' + liquid + "ml " + Math.round(getPrice() * 4) + "€";
     }
 }
