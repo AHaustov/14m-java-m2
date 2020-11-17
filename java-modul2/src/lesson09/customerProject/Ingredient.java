@@ -4,7 +4,7 @@ class Ingredient {
     private String name;
     private boolean alcohol;
     private int liquid;
-    private int perCent;
+    private int perCent;  // крепость ингредиента
 
     public Ingredient(String name, int liquid) {
         this.name = name;
