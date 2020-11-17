@@ -48,6 +48,14 @@ public class Person {
         return gender;
     }
 
+    public double getReductionFactor() {
+        if (getAge() < 8) {
+            return 0.77;
+        } else if (gender.getGender() == 2 || getAge() < 18) {
+            return 0.6;
+        } else return 0.7;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
