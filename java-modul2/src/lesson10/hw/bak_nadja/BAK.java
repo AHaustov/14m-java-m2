@@ -1,7 +1,5 @@
 package lesson10.hw.bak_nadja;
 
-import Day43.customerProject.Cocktail.Ingredient;
-
 public class BAK {
     private Person person;
     private Alcohol[] alcoholDrinks;

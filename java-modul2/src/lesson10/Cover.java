@@ -7,7 +7,7 @@ public enum Cover {
     POCKET("Taschenbuch");
     private String title;
 
-    private Cover(String title) {
+    Cover(String title) {
         this.title = title;
     }
 

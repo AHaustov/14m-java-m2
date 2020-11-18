@@ -16,7 +16,9 @@ public class AlcoholTest {
     }
 
     private double getAlcoholPpm() {
-        return alcohol.getAmountOfAlcohol() / (person.getMass() * person.getReduction());
+        return alcohol.getAmountOfAlcohol()
+                / (person.getMass()
+                * person.getReduction());
     }
 
     public double getTimeToDrive() {

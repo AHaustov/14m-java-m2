@@ -13,9 +13,10 @@ public class BAK {
         this.alcoholDrinks = alcoholDrinks;
         this.bloodAlcoholConcentration = getWholeAlcoGram() /
                 (person.getWeight() * person.getReductionFactor());
+        // setBloodAlcoholConcentration();
     }
 
-    private double getWholeAlcoGram() {
+    private double getWholeAlcoGram() { // динамический
         double sum = 0;
         for (Alcohol alcohol : alcoholDrinks) {
             sum += alcohol.getAlcoGram();

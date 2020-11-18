@@ -15,6 +15,10 @@ public class AlcoholHomework {
         Vodka vodka = new Vodka(1);
         DrivingRuleRussia russia = new DrivingRuleRussia();
         DrivingRuleGermany germany = new DrivingRuleGermany();
+        Man onkel = new Man(80);
+        Vodka pollitra = new Vodka(0.5);
+        AlcoholTest onkelVodkaRussia = new AlcoholTest(pollitra, onkel, russia);
+        System.out.println(onkelVodkaRussia.getTimeToDrive());
 
         AlcoholTest markVodkaRussia = new AlcoholTest(vodka, mark, russia);
         AlcoholTest mariaVodkaRussia = new AlcoholTest(vodka, maria, russia);
