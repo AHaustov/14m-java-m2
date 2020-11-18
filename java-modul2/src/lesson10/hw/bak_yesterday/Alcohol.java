@@ -1,4 +1,4 @@
-package lesson10.bak;
+package lesson10.hw.bak_yesterday;
 
 public class Alcohol {
     private String title;
