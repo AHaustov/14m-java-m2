@@ -1,4 +1,4 @@
-package HW10modul2.person;
+package lesson10.hw.bak_anna.person;
 
 public class Man extends Person {
 

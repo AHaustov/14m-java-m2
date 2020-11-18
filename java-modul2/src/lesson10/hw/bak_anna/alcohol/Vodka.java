@@ -1,4 +1,4 @@
-package HW10modul2.alcohol;
+package lesson10.hw.bak_anna.alcohol;
 
 public class Vodka extends Alcohol {
 

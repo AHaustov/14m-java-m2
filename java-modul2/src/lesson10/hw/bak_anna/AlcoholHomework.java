@@ -1,11 +1,11 @@
-package HW10modul2;
+package lesson10.hw.bak_anna;
 
-import HW10modul2.alcohol.Beer;
-import HW10modul2.alcohol.Vodka;
-import HW10modul2.drivingRule.DrivingRuleGermany;
-import HW10modul2.drivingRule.DrivingRuleRussia;
-import HW10modul2.person.Man;
-import HW10modul2.person.Woman;
+import lesson10.hw.bak_anna.alcohol.Beer;
+import lesson10.hw.bak_anna.alcohol.Vodka;
+import lesson10.hw.bak_anna.drivingRule.DrivingRuleGermany;
+import lesson10.hw.bak_anna.drivingRule.DrivingRuleRussia;
+import lesson10.hw.bak_anna.person.Man;
+import lesson10.hw.bak_anna.person.Woman;
 
 public class AlcoholHomework {
     public static void main(String[] args) {

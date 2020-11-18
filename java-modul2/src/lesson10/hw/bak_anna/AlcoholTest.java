@@ -1,8 +1,8 @@
-package HW10modul2;
+package lesson10.hw.bak_anna;
 
-import HW10modul2.alcohol.Alcohol;
-import HW10modul2.drivingRule.DrivingRule;
-import HW10modul2.person.Person;
+import lesson10.hw.bak_anna.alcohol.Alcohol;
+import lesson10.hw.bak_anna.drivingRule.DrivingRule;
+import lesson10.hw.bak_anna.person.Person;
 
 public class AlcoholTest {
     private Alcohol alcohol;
