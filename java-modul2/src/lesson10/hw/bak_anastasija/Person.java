@@ -1,7 +1,6 @@
-package lesson10.bak;
+package lesson10.hw.bak_anastasija;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Person {
     private String name;

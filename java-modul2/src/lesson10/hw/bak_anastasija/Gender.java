@@ -1,4 +1,4 @@
-package lesson10.bak;
+package lesson10.hw.bak_anastasija;
 
 public enum Gender {
     MALE(1),
